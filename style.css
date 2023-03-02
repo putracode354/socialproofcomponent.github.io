@@ -1,0 +1,209 @@
+/* font  */
+
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+
+
+/* root */
+:root {
+  --primary-clr: hsl(300, 43%, 22%);
+  --secondary-clr: hsl(333, 80%, 67%);
+  --dark-grey-clr: hsl(303, 10%, 53%);
+  --light-grey-clr: hsl(300, 24%, 96%);
+  --wht-clr: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  border-radius: none;
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+  background-color: var(--wht-clr);
+}
+
+
+/* styling component */
+main {
+  min-height: 100vh;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.col {
+  text-align: center;
+
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  color: var(--primary-clr);
+  padding: .6em 0;
+  font-weight: 700;
+  line-height: .8em;
+}
+
+.content .excess {
+  font-weight: 400;
+  color: var(--dark-grey-clr);
+  line-height: 1.3em;
+  padding-bottom: 2em;
+}
+
+.rate-box {
+  background-color: hsl(300, 100%, 98%);
+  color: var(--primary-clr);
+  font-weight: 700;
+  margin-bottom: 1em;
+  padding: .8em;
+  border-radius: .6em;
+}
+
+.rate-box .stars {
+  display: flex;
+  justify-content: center;
+  gap: .5em;
+}
+
+.rate-box .stars {
+  margin-bottom: .6em;
+}
+
+
+
+.box-comment {
+  background-color: var(--primary-clr);
+  color: var(--light-grey-clr);
+  padding: 1.6em;
+  margin-top: 2em;
+  border-radius: .5em;
+}
+
+.box-comment .profile {
+  display: flex;
+  align-items: center;
+}
+
+.box-comment .profile img {
+  border-radius: 100%;
+  height: 3em;
+  margin-right: 1.3em;
+}
+
+.box-comment .profile .profile-name p:first-child {
+  font-weight: 700;
+  padding-bottom: .3em;
+}
+
+.box-comment .profile .profile-name p:last-child {
+  font-weight: 400;
+  color: var(--secondary-clr);
+}
+
+.box-comment .comment {
+  padding: 1em 0;
+  line-height: 1.5em;
+  font-size: 1rem;
+}
+
+
+
+/* Responsive layout  */
+
+@media(min-width:1440px) {
+  main {
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main .col {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  main .col .content {
+    flex: 2 2 50%;
+    padding-right: 10em;
+  }
+
+
+
+  main .col .content h2 {
+    font-size: 3.5rem;
+  }
+
+  main .col .content .excess {
+    font-size: 1.1rem;
+    line-height: 1.5em;
+  }
+
+  main .col .rates {
+    flex: 1 1 50%;
+
+  }
+
+  main .col .rates .rate-box {
+    display: flex;
+    align-items: center;
+    padding: 1em;
+
+  }
+
+  main .col .rates .rate-box .stars {
+    padding-right: 2em;
+  }
+
+  .review {
+    max-width: 80%;
+
+  }
+
+  .guru {
+    max-width: 70%;
+
+    margin-left: 20%;
+  }
+
+  .best-tech {
+    max-width: 60%;
+    margin-left: 40%;
+  }
+
+  .reviews {
+    display: flex;
+    gap: 4em;
+    min-height: 50%;
+  }
+
+  .reviews .box-comment:first-child {
+    margin: 1em 0;
+  }
+
+
+  .reviews .box-comment:last-child {
+    margin: 4em 0 -1em 0;
+  }
+
+}
+
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
